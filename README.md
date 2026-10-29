@@ -23,10 +23,10 @@ assets/
 │   ├── kiandev-logo-monochrome-white.svg
 │   └── kiandev-logo-monochrome-dark.svg
 ├── png/
-│   ├── symbol/
-│   ├── horizontal/
-│   ├── stacked/
-│   └── monochrome/
+│   ├── symbol/          # 256, 512, 1024 y 2048 px
+│   ├── horizontal/      # 256, 512, 1024 y 2048 px
+│   ├── stacked/         # 512, 1024 y 2048 px
+│   └── monochrome/      # blanco y oscuro, 256–2048 px
 └── favicon/
     ├── favicon.svg
     ├── favicon-16.png
@@ -43,7 +43,10 @@ tokens/
 └── brand-tokens.json
 
 reference/
-└── kiandev-brand-board.png
+└── README.md
+
+scripts/
+└── export-assets.sh
 ```
 
 ## Paleta principal
@@ -66,7 +69,11 @@ reference/
 - Navegador/app icon: archivos de `assets/favicon/`.
 - Impresión o grabado: versiones monocromas.
 
-La fuente maestra del logo es el SVG. Los PNG de este repositorio son exportaciones derivadas de esos vectores.
+La fuente maestra del logo es el SVG. Los PNG son exportaciones derivadas de esos vectores.
+
+## Exportación automática
+
+El workflow `.github/workflows/export-assets.yml` vuelve a generar y versionar los PNG y favicons automáticamente cuando cambia un SVG maestro.
 
 ## Estado
 
