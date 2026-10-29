@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" role="img" aria-labelledby="title desc">
+  <title id="title">KianDev symbol</title>
+  <desc id="desc">Abstract K built from a violet directional ribbon and a blue forward chevron, with a subtle key-like secondary reading.</desc>
+  <defs>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B15CFF"/><stop offset="0.52" stop-color="#8B5CF6"/><stop offset="1" stop-color="#6F57FF"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4C8DFF"/><stop offset="0.52" stop-color="#3B82F6"/><stop offset="1" stop-color="#1677FF"/></linearGradient>
+    <linearGradient id="violetShade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6B46E8"/><stop offset="1" stop-color="#281B68"/></linearGradient>
+    <linearGradient id="blueShade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#164FC7"/><stop offset="1" stop-color="#0B2F79"/></linearGradient>
+  </defs>
+  <path d="M75 10 L75 55 L51 71 Q43 76 43 87 Q43 98 51 103 L75 119 L75 168 L31 141 Q21 135 21 123 L21 57 Q21 45 31 39 Z" fill="url(#violet)"/>
+  <path d="M75 55 L51 71 Q43 76 43 87 Q43 98 51 103 L75 119 L75 97 L59 87 L75 77 Z" fill="url(#violetShade)" opacity="0.9"/>
+  <path d="M81 73 L123 37 Q128 33 135 33 L181 33 Q188 33 184 38 L130 84 L186 139 Q191 144 183 144 L135 144 Q129 144 124 140 L81 99 Q74 92 74 86 Q74 80 81 73 Z" fill="url(#blue)"/>
+  <path d="M81 73 L101 56 L130 84 L101 109 L81 99 Q74 92 74 86 Q74 80 81 73 Z" fill="url(#blueShade)" opacity="0.58"/>
+</svg>
