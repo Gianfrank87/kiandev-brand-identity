@@ -1,0 +1,34 @@
+name: Export brand assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/svg/**'
+      - 'assets/favicon/favicon.svg'
+      - 'scripts/export-assets.sh'
+      - '.github/workflows/export-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Inkscape and Inter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y inkscape fonts-inter
+      - name: Export PNG assets
+        run: bash scripts/export-assets.sh
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/png assets/favicon/*.png
+          git diff --cached --quiet || git commit -m "chore: export PNG brand assets"
+          git push

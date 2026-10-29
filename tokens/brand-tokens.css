@@ -1,0 +1,13 @@
+:root {
+  --kiandev-violet: #8B5CF6;
+  --kiandev-violet-light: #B15CFF;
+  --kiandev-blue: #3B82F6;
+  --kiandev-blue-deep: #1677FF;
+  --kiandev-bg: #0F172A;
+  --kiandev-bg-deep: #07101F;
+  --kiandev-text: #E2E8F0;
+  --kiandev-text-muted: #A9B6D0;
+  --kiandev-border: #253557;
+  --kiandev-gradient: linear-gradient(135deg,#8B5CF6 0%,#3B82F6 100%);
+  --kiandev-font: "Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}

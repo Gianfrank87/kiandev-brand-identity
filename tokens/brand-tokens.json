@@ -1,0 +1,16 @@
+{
+  "brand": "KianDev",
+  "tagline": "Desarrollo sin límites",
+  "colors": {
+    "violet": "#8B5CF6",
+    "violetLight": "#B15CFF",
+    "blue": "#3B82F6",
+    "blueDeep": "#1677FF",
+    "background": "#0F172A",
+    "backgroundDeep": "#07101F",
+    "text": "#E2E8F0",
+    "textMuted": "#A9B6D0",
+    "border": "#253557"
+  },
+  "typography": {"primary": "Inter"}
+}
